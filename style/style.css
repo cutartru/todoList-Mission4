@@ -26,6 +26,12 @@ h1 {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
+.time-display {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
 #head-alert {
     flex-direction: row;
     position: relative;
@@ -36,7 +42,7 @@ h1 {
     font-size: 1rem;
     font-weight: 600;
     text-transform: capitalize;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 
 .alert-message, .error-message {
@@ -65,6 +71,7 @@ h1 {
 .error-message {
     background-color: #dc3545;
     color: #fff;
+
 }
 
 main {
@@ -74,10 +81,10 @@ main {
     height: 100%;
     position: relative;
     background-color: #d6f0c4;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     padding: 1.6rem 0.4rem;;
-    border-radius: 15px;
     margin: 0 0;
+
+
 }
 
 section {
@@ -86,8 +93,8 @@ section {
     flex-direction: column;
     margin: 0 1rem 1rem 1rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
-    border-radius: 15px;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: solid 1px rgb(204, 192, 192);
 }
 
 section label {
@@ -115,8 +122,11 @@ section label {
     padding: 0 1rem;
     justify-content: center;
     display: flex;
+
+
 }
 #todo-form {
+
     width: 100%;
     display: flex;
     background-color: white;
@@ -153,7 +163,6 @@ section label {
     outline: none;
     left: 0.4rem;
     padding-left: 0.8rem;
-    border-left: 0.2rem solid #ff7b00;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     text-transform: capitalize;
