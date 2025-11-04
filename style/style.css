@@ -12,7 +12,7 @@ body {
     justify-content: center;
     width: 100%;
     min-height: 100vh;
-    background-color: #aaaaaa;
+    background-color: #e7ebe3;
     padding: 0.5rem;
 }
 
@@ -20,7 +20,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #292525;
     font-size: 2.5rem;
     margin-bottom: 15px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
@@ -73,7 +73,7 @@ main {
     width: 36rem;
     height: 100%;
     position: relative;
-    background-color: #37444e;
+    background-color: #d6f0c4;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     padding: 1.6rem 0.4rem;;
     border-radius: 15px;
@@ -161,7 +161,7 @@ section label {
 }
 
 .form-group input[type="text"]::placeholder {
-    color: grey;
+    color: rgb(223, 127, 18);
 }
 
 .form-group input[type="date"] {
@@ -184,7 +184,7 @@ section label {
     justify-content: center;
     cursor: pointer;
     border: transparent;
-    background: #ff7b00;
+    background: hsl(189, 77%, 39%);
     color: #fff;
     height: 2.6rem;
     padding: 5px 15px;
@@ -448,20 +448,5 @@ section label {
 .timestamp p {
     font-size: 0.8rem;
     margin: 0;
-}
-
-.task-container.completed {
-    background-color: rgba(0, 0, 0, 0.2) !important;
-    box-shadow: none;
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #000000;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    border-radius: 15px;
-    cursor: default;
-    gap: 1rem;
 }
 
