@@ -146,3 +146,28 @@ function showAlert(message, type = "info") {
     }, 3000);
 }
 
+function updateUserDisplay() {
+    if (verifiedId.userId && verifiedId.positionId) {
+        currentUserDisplay.innerHTML = `Hello! My name is <em>${verifiedId.userId},</em> I am <em>${verifiedId.positionId}</em>`;
+        // Switch display mode
+        userDisplayMode.style.display = 'flex';
+        userInfoForm.style.display = 'none';
+    } else {
+        // Switch edit mode
+        userDisplayMode.style.display = 'none';
+        userInfoForm.style.display = 'flex';
+    }
+}
+
+function switchToEditMode() {
+    usernameInput.value = verifiedId.userId || '';
+    positionInput.value = verifiedId.positionId || '';
+    userDisplayMode.style.display = 'none';
+    userInfoForm.style.display = 'flex';
+}
+function switchToDisplayMode() {
+    userDisplayMode.style.display = 'flex';
+    userInfoForm.style.display = 'none';
+    updateUserDisplay();
+}
+
